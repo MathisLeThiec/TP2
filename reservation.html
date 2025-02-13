@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Viviers du Ruault - Sarzeau - Fruits de Mer du Golfe du Morbihan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-white">
+            <div class="container">
+                <a class="navbar-bran" href="index.html">Les Viviers du Ruault</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html">Nos Produits</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="reservation.html">Réservation</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main class="py-5 mt-5">
+        <div class="container">
+            <!-- En-tête de la section -->
+            <div class="text-center mb-5">
+                <h1 class="display-4 black mb-3">Réservation</h1>
+                <p class="lead text-secondary">Réservez vos fruits de mer frais directement en ligne</p>
+            </div>
+
+            <!-- Carte du formulaire -->
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card border-0 shadow-lg">
+                        <div class="card-body p-5">
+                            <form id="reservationForm" class="needs-validation" novalidate>
+                                <!-- Nom et Prénom -->
+                                <div class="row mb-4">
+                                    <div class="col-md-6">
+                                        <label for="nom" class="form-label">Nom</label>
+                                        <input type="text" class="form-control form-control-lg" id="nom" required>
+                                        <div class="invalid-feedback">
+                                            Veuillez entrer votre nom
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="prenom" class="form-label">Prénom</label>
+                                        <input type="text" class="form-control form-control-lg" id="prenom" required>
+                                        <div class="invalid-feedback">
+                                            Veuillez entrer votre prénom
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Email et Téléphone -->
+                                <div class="row mb-4">
+                                    <div class="col-md-6">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" class="form-control form-control-lg" id="email" required>
+                                        <div class="invalid-feedback">
+                                            Veuillez entrer une adresse email valide
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="telephone" class="form-label">Téléphone</label>
+                                        <input type="tel" class="form-control form-control-lg" id="telephone" required>
+                                        <div class="invalid-feedback">
+                                            Veuillez entrer votre numéro de téléphone
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Date et Heure -->
+                                <div class="row mb-4">
+                                    <div class="col-md-6">
+                                        <label for="date" class="form-label">Date de retrait</label>
+                                        <input type="text" class="form-control form-control-lg" id="date" required>
+                                        <div class="invalid-feedback">
+                                            Veuillez sélectionner une date
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="heure" class="form-label">Heure de retrait</label>
+                                        <select class="form-select form-select-lg" id="heure" required>
+                                            <option value="">Choisir une heure</option>
+                                            <option value="09:00">09:00</option>
+                                            <option value="10:00">10:00</option>
+                                            <option value="11:00">11:00</option>
+                                            <option value="14:00">14:00</option>
+                                            <option value="15:00">15:00</option>
+                                            <option value="16:00">16:00</option>
+                                            <option value="17:00">17:00</option>
+                                        </select>
+                                        <div class="invalid-feedback">
+                                            Veuillez sélectionner une heure
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Message -->
+                                <div class="mb-4">
+                                    <label for="message" class="form-label">Message (optionnel)</label>
+                                    <textarea class="form-control" id="message" rows="4" 
+                                                placeholder="Précisez ici vos besoins particuliers..."></textarea>
+                                </div>
+
+                                <!-- Bouton de soumission -->
+                                <div class="d-grid gap-2">
+                                    <button type="submit" class="btn btn-primary btn-lg">
+                                        Confirmer la réservation
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Les Viviers du Ruault</h5>
+                    <p>Fruits de mer du Golfe du Morbihan</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Nous trouver</h5>
+                    <p>117 Pointe du Ruault<br>56370 Sarzeau<br>Tél: 02.97.XX.XX.XX</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Horaires</h5>
+                    <p>
+                        Ouvert du lundi au samedi de 9h à 20h<br>
+                        Dimanche de 9h à 13h
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/fr.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script>
+        // Configuration du calendrier
+        flatpickr("#date", {
+            locale: 'fr',
+            dateFormat: "d/m/Y",
+            minDate: "today",
+            maxDate: new Date().fp_incr(30),
+            disable: [
+                function(date) {
+                    return (date.getDay() === 0 && date.getHours() >= 13);
+                }
+            ]
+        });
+
+    </script>
+</body>
+</html>
