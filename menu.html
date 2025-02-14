@@ -3,16 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Les Viviers du Ruault - Sarzeau - Fruits de Mer du Golfe du Morbihan</title>
+    <title>Nos Produits - Les Viviers du Ruault</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/style.css">
 </head>
 
 <body>
+    <!-- Navbar -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark">
+        <nav class="navbar navbar-expand-lg navbar-white">
             <div class="container">
-                <a class="navbar-brand" href="index.html">Les Viviers du Ruault</a>
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/img/logo.jpg" alt="Logo du restaurant" class="logo me-2">
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -22,7 +25,7 @@
                             <a class="nav-link" href="index.html">Accueil</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="menu.html">Nos Produits</a>
+                            <a class="nav-link active" href="menu.html">Nos Produits</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="reservation.html">Réservation</a>
@@ -33,11 +36,199 @@
         </nav>
     </header>
 
-    <main>
-        
+    <main class="py-5 mt-5">
+        <div class="container">
+            <!-- En-tête de la section -->
+            <div class="text-center mb-5">
+                <h1 class="display-4 text-black mb-3">Nos Produits</h1>
+                <p class="lead text-secondary">Découvrez notre sélection de fruits de mer frais du jour</p>
+            </div>
+
+            <!-- Système d'onglets pour les catégories -->
+            <ul class="nav nav-pills mb-4 justify-content-center" id="menuTabs" role="tablist">
+                <li class="nav-item mx-2" role="presentation">
+                    <button class="nav-link active text-black" data-bs-toggle="pill" data-bs-target="#huitres">Huîtres</button>
+                </li>
+                <li class="nav-item mx-2" role="presentation">
+                    <button class="nav-link text-black" data-bs-toggle="pill" data-bs-target="#crustaces">Crustacés</button>
+                </li>
+                <li class="nav-item mx-2" role="presentation">
+                    <button class="nav-link text-black" data-bs-toggle="pill" data-bs-target="#coquillages">Coquillages</button>
+                </li>
+                <li class="nav-item mx-2" role="presentation">
+                    <button class="nav-link text-black" data-bs-toggle="pill" data-bs-target="#plateaux">Plateaux</button>
+                </li>
+            </ul>
+
+            <!-- Contenu des onglets -->
+            <div class="tab-content" id="menuTabsContent">
+                <!-- Huîtres -->
+                <div class="tab-pane fade show active" id="huitres">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <img src="assets/img/HN3.jpg" class="card-img-top" alt="Huîtres creuses">
+                                <div class="card-body">
+                                    <h5 class="card-title">Huîtres Creuses de Cancale</h5>
+                                    <p class="card-text">Calibre N°3</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <p class="h4 mb-0">12,50€ / La douzaine</p>
+                                        <!-- <button class="btn btn-outline-primary">Réserver</button> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <img src="assets/img/HP3.png" class="card-img-top" alt="Huîtres plates">
+                                <div class="card-body">
+                                    <h5 class="card-title">Huîtres Plates de Belon</h5>
+                                    <p class="card-text">Calibre N°2</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <p class="h4 mb-0">24,00€ / La douzaine</p>
+                                        <!-- <button class="btn btn-outline-primary">Réserver</button> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Crustacés -->
+                <div class="tab-pane fade" id="crustaces">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <img src="/api/placeholder/800/400" class="card-img-top" alt="Homard">
+                                <div class="card-body">
+                                    <h5 class="card-title">Homard Breton</h5>
+                                    <p class="card-text">Pêche locale</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <p class="h4 mb-0">45,00€ / kg</p>
+                                        <!-- <button class="btn btn-outline-primary">Réserver</button> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <img src="/api/placeholder/800/400" class="card-img-top" alt="Langoustines">
+                                <div class="card-body">
+                                    <h5 class="card-title">Langoustines Vivantes</h5>
+                                    <p class="card-text">Pêche du jour</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <p class="h4 mb-0">35,00€ / kg</p>
+                                        <!-- <button class="btn btn-outline-primary">Réserver</button> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Coquillages -->
+                <div class="tab-pane fade" id="coquillages">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <img src="/api/placeholder/800/400" class="card-img-top" alt="Palourdes">
+                                <div class="card-body">
+                                    <h5 class="card-title">Palourdes</h5>
+                                    <p class="card-text">Pêche locale</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <p class="h4 mb-0">18,50€ / kg</p>
+                                        <!-- <button class="btn btn-outline-primary">Réserver</button> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <img src="/api/placeholder/800/400" class="card-img-top" alt="Coques">
+                                <div class="card-body">
+                                    <h5 class="card-title">Coques</h5>
+                                    <p class="card-text">Pêche du jour</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <p class="h4 mb-0">12,00€ / kg</p>
+                                        <!-- <button class="btn btn-outline-primary">Réserver</button> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Plateaux -->
+                <div class="tab-pane fade" id="plateaux">
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <img src="assets/img/P1.jpg" class="card-img-top" alt="Plateau Découverte">
+                                <div class="card-body">
+                                    <h5 class="card-title">Plateau Découverte</h5>
+                                    <p class="card-text">
+                                        6 huîtres creuses N°3<br>
+                                        6 crevettes roses<br>
+                                        6 bulots<br>
+                                        Bigorneaux
+                                    </p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <p class="h4 mb-0">35,00€</p>
+                                        <!-- <button class="btn btn-outline-primary">Réserver</button> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <img src="https://scontent-cdg4-1.xx.fbcdn.net/v/t39.30808-6/452957938_1022299619897070_1858226558307254162_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_ohc=q9OdCrDYfqoQ7kNvgEw_Sxb&_nc_oc=Adh3X-VzhOD1LD-nd9EHleerpabkFELemTGBGSf4sM5Z1L-n_GKwRzAT3yQAeL3EHJs&_nc_zt=23&_nc_ht=scontent-cdg4-1.xx&_nc_gid=AXD_stYFosTTRrlekTcjXTG&oh=00_AYBntDLnNcyo0omOpGj3QaXQzOLeADt6IZwOGCZAgXdZ5Q&oe=67B3CB81" class="card-img-top" alt="Plateau Royal">
+                                <div class="card-body">
+                                    <h5 class="card-title">Plateau Royal</h5>
+                                    <p class="card-text">
+                                        9 huîtres creuses N°3<br>
+                                        1/2 tourteau<br>
+                                        8 crevettes roses<br>
+                                        Bulots et bigorneaux
+                                    </p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <p class="h4 mb-0">55,00€</p>
+                                        <!-- <button class="btn btn-outline-primary">Réserver</button> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <img src="https://scontent-cdg4-1.xx.fbcdn.net/v/t39.30808-6/459108313_1055885223205176_8645940710306542076_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_ohc=CDbG3NIerc8Q7kNvgGjWWLX&_nc_oc=Adg1pX5Knmd7z40E1yO9awW_yqDrMt12H555Sr_FS-VNuhEgJacHSGDPqU3iFLHE_Jg&_nc_zt=23&_nc_ht=scontent-cdg4-1.xx&_nc_gid=Av2VBnUGx3a3afkFUT0f-i6&oh=00_AYBx6lTKnpRY1FDx0DVkrZJ29kGIhIJkE85y-hF6sZVaZw&oe=67B3F76D" class="card-img-top" alt="Plateau Prestige">
+                                <div class="card-body">
+                                    <h5 class="card-title">Plateau Prestige</h5>
+                                    <p class="card-text">
+                                        12 huîtres creuses N°3<br>
+                                        1 homard<br>
+                                        10 crevettes roses<br>
+                                        1 tourteau<br>
+                                        Bulots et bigorneaux
+                                    </p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <p class="h4 mb-0">95,00€</p>
+                                        <!-- <button class="btn btn-outline-primary">Réserver</button> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Note importante -->
+            <div class="alert alert-info mt-5">
+                <p class="mb-0">Les prix peuvent varier selon la saison et la disponibilité. N'hésitez pas à nous contacter pour connaître les produits du jour.</p>
+            </div>
+        </div>
     </main>
 
-    <footer class="footer">
+    <!-- Footer -->
+    <footer class="footer mt-5">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
